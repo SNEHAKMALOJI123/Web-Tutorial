@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before anf After the psuedo selectors</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Macondo&family=Oswald&family=Water+Brush&display=swap"
+        rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+            background-color: black;
+            color: white;
+        }
+
+        .btn{
+            background-color: yellowgreen;
+            color: white;
+            padding: 4px 15px;
+            cursor: pointer;
+            border-radius: 5px;
+            border: 2px solid purple;
+        }
+
+        header {
+            background: url('https://images.unsplash.com/photo-1615719413546-198b25453f85?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8Zm9vZCUyMGJhY2tncm91bmR8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60') no-repeat center center/cover;
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.7;
+        }
+
+        .navigation {
+            font-family: 'Oswald', sans-serif;
+            font-size: 20px;
+            display: flex;
+        }
+
+        .search{
+            float: right;
+            color: black;
+            padding: 0px 1000px;
+            display: inline;
+            
+        }
+
+        li {
+            list-style: none;
+            padding: 34px 23px;
+        }
+
+        section {
+            height: 350px;
+            font-family: 'Oswald', sans-serif;
+            /* border: 2px solid purple; */
+            margin: 3px 230px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            /* the text will come center in the box  */
+
+        }
+
+        h1 {
+            font-size: 4rem;
+        }
+
+        p {
+            text-align: center;
+        }
+
+        /* section::after{
+           content: 'This is before content';
+       } */
+    </style>
+</head>
+
+<body>
+    <header2 class="header2">
+        <div class="right">
+            <button class="btn">Best offer</button>
+            <button class="btn">Call us</button>
+        </div>
+    </header2>
+    <header class="header">
+
+        <nav class="bar">
+            <ul class="navigation">
+                <li class="item">Home</li>
+                <li class="item">About</li>
+                <li class="item">Sevices</li>
+                <li class="item">Contact</li>
+                <div class="search">
+                    <input type="text" name="search" id="search" placeholder="search items">
+                </div>
+            </ul>
+        </nav>
+        <section>
+            <h1>Welcome to Pizza World</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem et natus odit, a numquam recusandae
+                sequi asperiores explicabo, aliquid tenetur accusamus non! Nulla corporis eos obcaecati fugiat dolorem
+                similique numquam doloremque ad inventore perferendis! Dolorem adipisci mollitia pariatur doloremque
+                impedit!</p>
+        </section>
+
+    </header>
+</body>
+
+</html>

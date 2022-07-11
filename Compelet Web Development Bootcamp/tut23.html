@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation</title>
+    <style>
+        .navbar{
+            background-color: yellowgreen;
+            border-radius: 20px;
+        }
+        .navbar{
+            overflow: auto;
+        }
+        .navbar li{
+            float: left;
+            /* The list-style property is used to remove all the bulleted points in the navigation items. */
+            list-style: none;
+            margin: 13px 20px;
+        }
+        .navbar li a{
+           padding: 3px 3px;
+           text-decoration: none;
+           color: black;
+            
+        }
+        /* We can also add the hover effect in all the li’s. It means whenever we place the pointer on those elements it should change its color. */
+        .navbar li a:hover{
+            color: orangered;
+        }
+        .search{
+            float: right;
+            color: black;
+            padding: 12px 75px;
+        }
+        .navbar input{
+            border: 2px solid black;
+            border-radius: 14px;
+            padding: 3px 17px;
+            width: 129px;
+        }
+    </style>
+    
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+               <!-- for giving the link a tag is used  -->
+              <li><a href="#">HOME</a</li>
+              <li><a href="#">ABOUT</a></li>
+              <li><a href="#">SEVICES</a></li>
+              <li><a href="#">CONTACT US</a></li>
+               <div class="search">  
+                <!-- add the search bar in the navigation menu.  -->
+                   <input type="text" name="search" id="search" placeholder="search the website">
+               </div>
+            </ul>
+        </nav>
+    </header>
+</body>
+</html>

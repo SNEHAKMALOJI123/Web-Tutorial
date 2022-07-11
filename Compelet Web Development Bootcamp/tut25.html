@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABOSULTE AND RELATIVE</title>
+    <style>
+        .container{
+            border: 4px solid purple;
+            background-color: yellowgreen;
+            height:3444px;
+        }
+        /* css positions: static(deafault),relative,absolute,fixed,sticky */
+.box{
+    display: inline-block;
+    border: 2px solid black;
+    width: 150px;
+    height: 150px;
+    margin: 2px;
+    
+}
+#box2{
+    
+    /* relative means its normal positions and vl leave the gap at its normal position */
+    /* position: relative; */
+
+    /* position: absolute; */
+    /* absoulte: absoulte to the position of its first parent */
+
+    /* position: fixed;
+    fixed: ;Position the element relative to the browser window
+    right: 4px;
+    bottom: 2px; */
+    /* top: 34px;
+    left: 34px; */
+
+    /* STICKY:position the element of sticky is the bos is going to come down as v scorll the page */
+    position: sticky;
+    top: 3px;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="box1">1</div>
+        <div class="box" id="box2">CHAT WITH US</div>
+        <div class="box" id="box3">3</div>
+        <div class="box" id="box4">4</div>
+    </div>
+</body>
+</html>

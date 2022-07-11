@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on Selectors</title>
+    <style>
+        h1{
+            background-color: yellowgreen;
+            color: purple;
+            font-weight: bold;
+            text-align: center;
+            
+        }
+            /* if p is contained by any li which is contained by div */
+         /* div li p{
+            color: hotpink;
+            background-color: blueviolet;
+            font-weight: bold;/* if p is right inside div then this CSS will be applied */
+        /* } 
+
+        /* if p is right inside div then this CSS will be applied */
+        /* div> p{
+            color: hotpink;
+            background-color: blueviolet;
+            font-weight: bold;
+        } */
+
+        /* if p is right after div i.e p is the next sibling of div*/
+        /* div + p{
+            color: aqua;
+            background-color: orange;
+        } */
+    </style>
+</head>
+<body>
+    <h1>This is More On Selectors</h1>
+    <div class="container">
+        <div class="row">
+            <ul>
+                <li class="item"><p>ipsum dolor sit amet.</p></li>
+                <li class="item"><p>Lorem ipsum dolor sit amet.</p></li>
+                <li>this is paragraph</li>
+                <p>this is para inside the ul</p>
+                
+            </ul>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam, quaerat!</p>
+        </div>
+        <p>This is another paragraph</p>
+    </div>
+    <p>This is outer paragraph</p>
+</body>
+</html>

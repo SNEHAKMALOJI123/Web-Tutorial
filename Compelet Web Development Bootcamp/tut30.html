@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queuries</title>
+    <style>
+        .box{
+            font-size: 70px;
+            background-color: yellowgreen;
+            color: purple;
+            text-align: center;
+            display: none;
+        }
+
+        @media (max-width:500px) {
+            #box-1{
+                display: block;
+                background-color: blue;
+            }
+        }
+        @media(min-width:300px) and (max-width:500px) {
+            #box-2{
+                display: block;
+                background-color: palevioletred;
+            }
+        }
+        @media(min-width:500px)and (max-width:800px) {
+            #box-3{
+                display: block;
+                background-color: aqua;
+            }
+        }@media (max-width:800px) {
+            #box-4{
+                display: block;
+                background-color: bisque;
+            }
+        }
+
+    </style>
+</head>
+<body>
+   <div class="box" id="box-1">CountryInternational</div>
+   <div class="box" id="box-2">FiveCapatain</div>
+   <div class="box" id="box-3">Introduction</div>
+   <div class="box" id="box-4">MyComputer</div> 
+</body>
+</html>

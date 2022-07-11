@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aittrubtes and nth psuedo selectors</title>
+    <style>
+        .container{
+            margin: auto;
+            display: block;
+            width: 255px;
+        }
+        input{
+            display: block;
+        }
+        input[type='text']{
+            padding: 20px;
+            margin: 20px;
+            border: 2px solid orangered;
+        }
+        a[target]{
+            font-size: 35px;
+            color: green;
+            margin: 20px;
+        }
+        a[target='_self']{
+            font-size: 25px;
+            color: rgb(246, 154, 17);
+            margin: 20px;
+        }
+        input[type='email']{
+            color: red;
+            margin: 20px;
+            border: 2px solid indigo;
+        }
+        input[type='submit']{
+            margin: 20px;
+        }
+        This is apply for 5th child in css
+        /* li:nth-child(5){
+            color:darkred;
+        } */
+
+        /* li:nth-child(2n+0){
+            color: rgb(251, 61, 9);
+        } */
+
+        li:nth-child(3n+3){
+            color:orangered;
+        }
+
+        /* odd child */
+        li:nth-child(odd){
+            background-color: goldenrod;
+        }
+
+        /* even child */
+        li:nth-child(even){
+            background-color: purple;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1><a href="http://goggle.com" target="_blank">Go to goggle</a></h1>
+        <h1><a href="http://facebook.com" target="_self">Go to facebook</a></h1>
+        <form action="" class="form-control">
+            <input type="text" placeholder="Enter your name">
+            <input type="email" placeholder="Enter  your email">
+            <input type="submit" placeholder="Submit">
+        </form>
+        <ul>
+            <li class="items" id="item-1">Item1</li>
+            <li class="items" id="item-2">Item2</li>
+            <li class="items" id="item-3">Item3</li>
+            <li class="items" id="item-4">Item4</li>
+            <li class="items" id="item-5">Item5</li>
+            <li class="items" id="item-6">Item6</li>
+            <li class="items" id="item-7">Item7</li>
+            <li class="items" id="item-8">Item8</li>
+            <li class="items" id="item-9">Item9</li>
+            <li class="items" id="item-10">Item10</li>
+        </ul>
+    </div>
+</body>
+</html>
